@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class App {
-    private static final String USAGE = "Usage: java -jar rmdup.jar <directoryA> <directoryB> <directoryC>";
+    private static final String USAGE = "Usage: java -jar rmdup-1.0.0.jar <directoryA> <directoryB> <directoryC>";
 
     public static void main(String[] args) {
         Path[] paths = parseArgs(args);

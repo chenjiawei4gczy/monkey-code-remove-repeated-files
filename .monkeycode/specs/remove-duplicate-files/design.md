@@ -28,7 +28,7 @@ flowchart TD
 所在包：`com.monkeycode.rmdup`
 
 - `main(String[] args)`：解析命令行参数，协调各组件完成整体流程
-- 参数格式：`java -jar rmdup.jar <目录A> <目录B> <目录C>`
+- 参数格式：`java -jar rmdup-1.0.0.jar <目录A> <目录B> <目录C>`
 
 ### 2. FileIndex（文件索引）
 

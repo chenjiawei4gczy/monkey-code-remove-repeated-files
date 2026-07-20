@@ -5,7 +5,7 @@
 ### 基本用法
 
 ```bash
-java -jar rmdup.jar <目录A> <目录B> <目录C>
+java -jar rmdup-1.0.0.jar <目录A> <目录B> <目录C>
 ```
 
 ### 参数
@@ -21,7 +21,7 @@ java -jar rmdup.jar <目录A> <目录B> <目录C>
 输出用法提示并退出（退出码 1）：
 
 ```
-Usage: java -jar rmdup.jar <directoryA> <directoryB> <directoryC>
+Usage: java -jar rmdup-1.0.0.jar <directoryA> <directoryB> <directoryC>
 ```
 
 ### 目录不存在时
