@@ -73,11 +73,13 @@ public class App {
         FileMover mover = new FileMover();
         for (Path file : duplicates) {
             MoveResult result = mover.move(file, pathA, pathC);
-            if (result instanceof MoveResult.Success s) {
+            if (result instanceof MoveResult.Success) {
+                MoveResult.Success s = (MoveResult.Success) result;
                 System.out.println("Moved: " + pathA.relativize(s.source())
                         + " -> " + pathC.relativize(s.destination()));
                 report.addMoved(s);
-            } else if (result instanceof MoveResult.Failure f) {
+            } else if (result instanceof MoveResult.Failure) {
+                MoveResult.Failure f = (MoveResult.Failure) result;
                 System.err.println("Failed: " + pathA.relativize(f.source()) + " - " + f.reason());
                 report.addFailed(f);
             }
